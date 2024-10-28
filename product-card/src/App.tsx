@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from  'header/Header'
-import Card from 'product_card/Card'
+
 import './index.scss'
+import Card from './component/Card'
 const data =       {
   "product_name": "Rev",
   "brand": "Yodoo",
@@ -17,11 +17,9 @@ const data =       {
   "image_url": "http://dummyimage.com/164x225.png/5fa2dd/ffffff"
 }
 const App = () => (
-  <div>
-    <Header/>
-    <Card {...data}/>
+  <div className="mt-10 text-3xl mx-auto max-w-6xl">
+    <Card {...data} />
   </div>
-
 )
 const rootElement = document.getElementById('app')
 if (!rootElement) throw new Error('Failed to find the root element')

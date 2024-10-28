@@ -9,7 +9,7 @@ const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "http://localhost:3000/",
   },
 
   resolve: {
@@ -17,7 +17,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 3001,
+    port: 3000,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, 'src')],
     onListening: function (devServer) {
@@ -65,7 +65,8 @@ module.exports = (_, argv) => ({
       name: "app",
       filename: "remoteEntry.js",
       remotes: {
-        header:'header@http://localhost:3000/remoteEntry.js'
+        header:'header@http://localhost:3001/remoteEntry.js',
+        product_card:'product_card@http://localhost:3002/remoteEntry.js',
       },
       exposes: {},
       shared: {
