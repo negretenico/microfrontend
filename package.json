@@ -1,0 +1,19 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "Microfrontend Architecture POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negretenico/microfrontend.git"
+  },
+  "author": "Nicholas Negrete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/negretenico/microfrontend/issues"
+  },
+  "homepage": "https://github.com/negretenico/microfrontend#readme"
+}
