@@ -62,7 +62,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "controller",
+      name: "app",
       filename: "remoteEntry.js",
       remotes: {
         header:'header@http://localhost:3000/remoteEntry.js'
