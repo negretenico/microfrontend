@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/negretenico/microfrontend/issues"
   },
-  "homepage": "https://github.com/negretenico/microfrontend#readme"
+  "homepage": "https://github.com/negretenico/microfrontend#readme",
+  "dependencies": {
+    "react-toastify": "^10.0.6"
+  }
 }
