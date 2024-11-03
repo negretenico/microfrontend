@@ -67,7 +67,9 @@ module.exports = (_, argv) => ({
       remotes: {
         product_card:'product_card@http://localhost:3002/remoteEntry.js',
       },
-      exposes: {},
+      exposes: {
+        "./Layout": "./src/component/Layout.tsx"
+      },
       shared: {
         ...deps,
         react: {

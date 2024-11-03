@@ -1,25 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from  'header/Header'
-import Card from 'product_card/Card'
+import Layout from 'layout/Layout'
 import './index.scss'
-const data =       {
-  "product_name": "Rev",
-  "brand": "Yodoo",
-  "price": 447.4,
-  "size": "Large",
-  "color": "Fuscia",
-  "material": "Nylon",
-  "weight": 0.78,
-  "gender": "Women",
-  "sport_type": "Boxing",
-  "availability": false,
-  "image_url": "http://dummyimage.com/164x225.png/5fa2dd/ffffff"
-}
 const App = () => (
   <div>
     <Header/>
-    <Card {...data}/>
+    <div className='overflow-y-auto'>
+      <Layout/>
+    </div>
   </div>
 
 )

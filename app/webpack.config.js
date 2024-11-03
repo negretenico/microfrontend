@@ -66,7 +66,7 @@ module.exports = (_, argv) => ({
       filename: "remoteEntry.js",
       remotes: {
         header:'header@http://localhost:3001/remoteEntry.js',
-        product_card:'product_card@http://localhost:3002/remoteEntry.js',
+        layout:'product_card@http://localhost:3003/remoteEntry.js',
       },
       exposes: {},
       shared: {
