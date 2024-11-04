@@ -14,8 +14,9 @@ type CardProps =Partial<{
     image_url: string}> 
   
 export default function Card(props: CardProps) {
+  const dropShadow = props.availability? 'hover:shadow-green-400':'hover:shadow-red-400'
   return (
-<div className="max-w-60 max-h-xs rounded overflow-hidden shadow-lg">
+<div className={`max-w-60 max-h-xs rounded overflow-hidden shadow-lg ${dropShadow}`}>
   <img style={{
     height: '10rem'
   }} className="w-full" src={props?.image_url} alt={props.product_name}/>

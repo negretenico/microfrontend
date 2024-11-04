@@ -6,9 +6,14 @@ import './index.scss'
 const App = () => (
   <div>
     <Header/>
-    <div className='overflow-y-auto'>
-      <Layout/>
-    </div>
+    <div className="flex justify-center mt-16">
+  <div
+    className="overflow-y-auto w-full max-w-4xl mx-4 "
+    style={{ height: '100%' }}
+  >
+    <Layout />
+  </div>
+</div>
   </div>
 
 )
